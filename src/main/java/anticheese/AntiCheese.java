@@ -30,6 +30,7 @@ public class AntiCheese extends JavaPlugin implements Listener {
         sterilize(event.getPlayer().getInventory());
     }
 
+    @EventHandler
     public void onOpenSelf(InventoryCloseEvent event) {
         sterilize(event.getInventory());
         sterilize(event.getPlayer().getInventory());
