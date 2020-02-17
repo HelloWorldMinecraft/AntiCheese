@@ -1,0 +1,10 @@
+version = "1.0.0"
+apply from: rootProject.file("../plugin.gradle").exists() ? rootProject.file("../plugin.gradle") : "https://raw.githubusercontent.com/HelloWorldMinecraft/BuildSystem/master/plugin.gradle"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "com.google.code.findbugs:jsr305:3.0.0"
+}
