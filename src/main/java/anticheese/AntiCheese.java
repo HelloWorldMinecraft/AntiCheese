@@ -11,7 +11,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Map;
+import kr.entree.spigradle.annotations.SpigotPlugin;
 
+@SpigotPlugin
 public class AntiCheese extends JavaPlugin implements Listener {
 
     @Override

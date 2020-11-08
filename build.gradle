@@ -1,10 +1,12 @@
-version = "1.0.0"
-apply from: rootProject.file("../plugin.gradle").exists() ? rootProject.file("../plugin.gradle") : "https://raw.githubusercontent.com/HelloWorldMinecraft/BuildSystem/master/plugin.gradle"
-
-repositories {
-    mavenCentral()
+plugins {
+    id 'kr.entree.spigradle' version '2.2.3'
+    id 'idea'
 }
 
 dependencies {
-    compile "com.google.code.findbugs:jsr305:3.0.0"
+    compileOnly spigot("1.16.4")
+}
+
+spigot {
+    apiVersion "1.16"
 }

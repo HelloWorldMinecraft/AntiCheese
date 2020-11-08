@@ -1,5 +1,0 @@
-name: ${project.name}
-main: anticheese.AntiCheese
-version: ${project.version}
-authors: [ Username4723 ]
-api-version: ${project.apiversion}
